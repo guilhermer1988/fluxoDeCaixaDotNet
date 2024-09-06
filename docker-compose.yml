@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: mysql:8.0.22
+    container_name: mysqldb
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: "phpmyadmin"
+
+  fluxocaixa:
+    image: ${DOCKER_REGISTRY-}fluxocaixa
+    container_name: fluxocaixa
+    build:
+      context: .
+      dockerfile: FluxoCaixaLancamento/src/FluxoCaixa/Dockerfile
+
+  fluxocaixasaldoconsolidado:
+    image: ${DOCKER_REGISTRY-}fluxocaixasaldoconsolidado
+    container_name: fluxocaixasaldoconsolidado
+    build:
+      context: .
+      dockerfile: FluxoCaixaSaldoConsolidado/src/FluxoCaixa/Dockerfile
+
+  fluxocaixafront:
+    image: ${DOCKER_REGISTRY-}fluxocaixafront
+    container_name: fluxocaixafront
+    build:
+        context: .
+        dockerfile: fluxocaixafront/Dockerfile
