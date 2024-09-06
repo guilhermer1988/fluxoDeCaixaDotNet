@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixa", "FluxoCaixa.csproj", "{B2FD10A9-B5D1-4FF9-84CB-E0599A0D0769}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{263CC9EE-171F-4899-AFBD-1061A77B47CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\UnitTest\UnitTest.csproj", "{3C4CB1BB-8448-4A13-9100-C10D538C66F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2FD10A9-B5D1-4FF9-84CB-E0599A0D0769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FD10A9-B5D1-4FF9-84CB-E0599A0D0769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FD10A9-B5D1-4FF9-84CB-E0599A0D0769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FD10A9-B5D1-4FF9-84CB-E0599A0D0769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4CB1BB-8448-4A13-9100-C10D538C66F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4CB1BB-8448-4A13-9100-C10D538C66F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4CB1BB-8448-4A13-9100-C10D538C66F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4CB1BB-8448-4A13-9100-C10D538C66F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C4CB1BB-8448-4A13-9100-C10D538C66F2} = {263CC9EE-171F-4899-AFBD-1061A77B47CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A72DF33F-723F-41CA-B793-CA16892FE7F3}
+	EndGlobalSection
+EndGlobal
