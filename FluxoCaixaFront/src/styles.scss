@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$dark-red: #e1183f;
+$gray-text: rgba(0, 0, 0, 0.8);
+
+// Gray variations
+$gray1: rgba(0, 0, 0, 0.8);
+$gray2: rgba(0, 0, 0, 0.3);
+$gray3: rgba(0, 0, 0, 0.1);
+$gray4: rgba(0, 0, 0, 0.17);
+$gray5: rgba(0, 0, 0, 0.08);
+$gray6: rgba(0, 0, 0, 0.05);
+$gray7: rgba(0, 0, 0, 0.03);
+
+* {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'FontAwesome';
+}
+
+body {
+  margin: 0;
+  color: $gray-text;
+}
+
+.btn {
+  min-width: fit-content;
+  width: 130px;
+  height: 45px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  letter-spacing: 1.2px;
+  line-height: 14px;
+  box-shadow: 0px 3px 6px $gray4;
+  cursor: pointer !important;
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 50%;
+  }
+}
+
+.primary-btn {
+  background-color: $dark-red !important;
+  color: white !important;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+.secondary-btn {
+  background-color: white !important;
+
+  &:hover {
+    background-color: $gray7 !important;
+  }
+}
+
+.card {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid $gray5;
+}
+
+
+// Form styles
+.generic-form {
+  .input-group {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+  
+    .new-client-account-message {
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+  
+    .buttons {
+      margin: 20px 0;
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+  
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+  
+        span {
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+  
+        .fa {
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  mat-error {
+    color: $dark-red;
+    opacity: 90%;
+  }
+  
+  mat-hint, mat-error {
+    font-size: 12px;
+  }
+}

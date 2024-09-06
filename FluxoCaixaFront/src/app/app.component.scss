@@ -1,0 +1,55 @@
+// IBM color palette
+$ibm-blue: #052f5f;
+$ibm-light-blue: #4178be;
+$ibm-gray: #f3f3f3;
+$ibm-dark-gray: #3d3d3d;
+$ibm-white: #ffffff;
+
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: $ibm-gray;
+  color: $ibm-dark-gray;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.menu {
+  background-color: $ibm-blue;
+  padding: 1rem;
+  text-align: center;
+
+  .home {
+    color: $ibm-white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: $ibm-white;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: $ibm-dark-gray;
+  color: $ibm-white;
+  font-size: 0.9rem;
+}

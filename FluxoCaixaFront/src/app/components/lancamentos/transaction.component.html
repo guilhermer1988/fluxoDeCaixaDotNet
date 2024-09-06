@@ -1,0 +1,24 @@
+<div class="transactions-container">
+  <h2>Lançamento</h2>
+  <form (submit)="createTransaction()">
+    <label for="tipo">Tipo de Lançamento</label>
+    <select id="tipo" class="form-control" required [(ngModel)]="newTransaction.tipo" name="tipo">
+      <option value=1>Crédito</option>
+      <option value=2>Débito</option>
+    </select>
+
+    <input [(ngModel)]="newTransaction.valor" name="value" type="number" placeholder="Valor" required />
+    {{ newTransaction.valor | currency }}
+
+    <label for="descricao">Descrição</label>
+    <input type="text" id="descricao" class="form-control" [(ngModel)]="newTransaction.descricao" name="descricao">
+
+    <button type="submit">Salvar Lançamento</button>
+
+    <div *ngIf="successMessage">
+      {{ successMessage }}
+    </div>
+  </form>
+
+  
+</div>

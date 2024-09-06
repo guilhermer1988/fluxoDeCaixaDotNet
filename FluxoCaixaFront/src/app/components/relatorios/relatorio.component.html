@@ -1,0 +1,21 @@
+<div class="relatorio-container">
+  <h2>Relatório Consolidado Diário</h2>
+
+  <div class="input-group">
+    <label for="dataSelecionada">Data:</label>
+    <input type="date" id="data" [(ngModel)]="dataSelecionada" />
+  </div>
+
+  <button type="submit" (click)="onBuscarRelatorio()">Buscar Relatório</button>
+
+  <div *ngIf="saldoConsolidado !== null" class="resultado">
+    <h3>Resultados para: {{ saldoConsolidado.data | date }}</h3>
+    <p>Total Crédito: {{ saldoConsolidado.totalCredito | currency }}</p>
+    <p>Total Débito: {{ saldoConsolidado.totalDebito | currency }}</p>
+    <p>Saldo Final Consolidado: {{ saldoConsolidado.saldoFinal | currency}}</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error">
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>

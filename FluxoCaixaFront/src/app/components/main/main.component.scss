@@ -1,0 +1,67 @@
+// color palette
+$ibm-blue: #052f5f;
+$ibm-light-blue: #4178be;
+$ibm-gray: #f3f3f3;
+$ibm-dark-gray: #3d3d3d;
+$ibm-white: #ffffff;
+
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: $ibm-gray;
+  color: $ibm-dark-gray;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: $ibm-blue;
+  color: $ibm-white;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+.app-nav {
+  background-color: $ibm-light-blue;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        color: $ibm-white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        display: inline-block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: $ibm-blue;
+          color: $ibm-white;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
